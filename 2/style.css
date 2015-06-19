@@ -1,0 +1,46 @@
+body {
+	background: red;
+	background: green;
+}
+
+#text_1 {
+	font-size: 24px;
+}
+
+.yellow {
+	background: yellow;
+}
+
+
+.blue {
+	background: blue;
+}
+
+.big-text {
+	font-size: 36px;
+}
+.small-text {
+	font-size: 12px;
+	
+
+}
+
+.text-block {
+	width: 400px;
+	background: red;
+	border: 5px solid #fffffe;
+	padding: 20px;
+	margin: 0;
+	float:left;
+}
+
+.clear {
+	clear:both;
+}
+
+.white {
+	display: inline-block;
+	width: 150px;
+	padding: 10px;
+	background:white;
+}
