@@ -1,0 +1,39 @@
+.wrap {
+	width: 960px;
+	height: 500px;
+	margin:10px auto;
+	background: yellow;
+}
+
+.header {
+	height:100px;
+	padding: 50px;
+	background: green;
+}
+
+.logo {
+	width: 200px;
+	height: 100px;
+	background: orange;
+	margin: 0;
+	float: left;
+}
+.logo a {
+	display: block;
+	height: 100%;
+}
+
+.nav {
+
+}
+
+.nav li {
+	display: block;
+	width: 165px;
+	background: red;
+	float: left;
+	text-align: center;
+}
+.nav li:hover {
+	background: cyan;
+}
