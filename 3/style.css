@@ -24,16 +24,50 @@
 }
 
 .nav {
-
+	width: 640px;
+	margin:0;
+	margin-left: 20px;
+	padding: 0;
+	float: right;
+	
 }
 
 .nav li {
 	display: block;
-	width: 165px;
+	width: 160px;
+	height: 100px;
 	background: red;
 	float: left;
 	text-align: center;
 }
+
 .nav li:hover {
 	background: cyan;
+}
+
+.nav li a {
+	display:block;
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+	padding: 50px;
+	color: white;
+}
+
+.content {
+	width: 520px;
+	background: purple;
+	float: left;
+}
+
+.sidebar {
+	width: 320px;
+	background: black;
+	margin-left: 20px;
+	float: right;
 }
