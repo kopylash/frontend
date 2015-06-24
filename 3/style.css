@@ -1,6 +1,9 @@
+body {
+	background: url(img/img100x100.jpg);
+}
+
 .wrap {
 	width: 960px;
-	height: 500px;
 	margin:10px auto;
 	background: yellow;
 }
@@ -8,15 +11,18 @@
 .header {
 	height:100px;
 	padding: 50px;
-	background: green;
+	background: green url(img/img1000x400.jpg) no-repeat;
+	background-size:100% 100%;
 }
 
 .logo {
 	width: 200px;
 	height: 100px;
-	background: orange;
+	background:orange url(img/img200x100.jpg);
 	margin: 0;
+	margin-right: 20px;
 	float: left;
+	font-size: 0;
 }
 .logo a {
 	display: block;
@@ -26,9 +32,8 @@
 .nav {
 	width: 640px;
 	margin:0;
-	margin-left: 20px;
 	padding: 0;
-	float: right;
+	float: left;
 	
 }
 
@@ -47,7 +52,7 @@
 
 .nav li a {
 	display:block;
-	height: 100%;
+	line-height: 100px;
 }
 
 .clear {
@@ -69,5 +74,18 @@
 	width: 320px;
 	background: black;
 	margin-left: 20px;
+	float: left;
+}
+
+.footer {
+	height:200px;
+	background: pink;
+}
+
+.fr {
 	float: right;
+}
+
+.fl {
+	float: left;
 }
