@@ -1,24 +1,25 @@
 body {
-	background: url(img/img100x100.jpg);
+	background: url(img/background1600x900.jpg) no-repeat;
+	background-size: 100% 100%;
 }
 
 .wrap {
 	width: 960px;
 	margin:10px auto;
-	background: yellow;
+	background: #fffffe;
 }
 
 .header {
 	height:100px;
 	padding: 50px;
-	background: green url(img/img1000x400.jpg) no-repeat;
+	background: green url(img/header1000x400.jpg) no-repeat;
 	background-size:100% 100%;
 }
 
 .logo {
 	width: 200px;
 	height: 100px;
-	background:orange url(img/img200x100.jpg);
+	background:transparent url(img/logo200х100.png);
 	margin: 0;
 	margin-right: 20px;
 	float: left;
@@ -41,7 +42,7 @@ body {
 	display: block;
 	width: 160px;
 	height: 100px;
-	background: red;
+	background: transparent url("img/green_prozr.png") repeat scroll center center;
 	float: left;
 	text-align: center;
 }
@@ -53,6 +54,7 @@ body {
 .nav li a {
 	display:block;
 	line-height: 100px;
+	text-decoration: none;
 }
 
 .clear {
@@ -60,26 +62,67 @@ body {
 }
 
 .container {
-	padding: 50px;
-	color: white;
+	padding: 20px 50px;
 }
 
 .content {
 	width: 520px;
-	background: purple;
 	float: left;
 }
 
 .sidebar {
 	width: 320px;
-	background: black;
 	margin-left: 20px;
 	float: left;
 }
 
+.category-header {
+	width:320px;
+ 	border-bottom: 3px dashed #ff7582;
+}
+
+.category-block {
+	background: #FF942B;
+}
+
+.category-block ul {
+	list-style-type: square;
+}
+.category-block a {
+	text-decoration: none;
+}
+
+.category-block a:hover {
+	background: #00cc00 none repeat scroll 0 0;
+    color: #fff;
+}
+
 .footer {
-	height:200px;
-	background: pink;
+	background: #222222;
+	padding: 10px 50px;
+}
+
+.copyright {
+	width: 360px;
+	line-height: 80px;
+
+}
+
+.sitemap {
+	width: 250px;
+}
+
+.sitemap ul {
+	list-style-type: none;
+}
+
+.sitemap a {
+	text-decoration: none;
+}
+
+.sitemap a:hover {
+	text-decoration: underline;
+	color:red;
 }
 
 .fr {
@@ -88,4 +131,22 @@ body {
 
 .fl {
 	float: left;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.addsBlock {
+}
+.advert {
+	margin-left: 5px;
+}
+
+.medium-text {
+	font-size: 1.25em;
+}
+
+.big-text {
+	font-size: 2em;
 }
