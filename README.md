@@ -28,4 +28,16 @@ Homework 5 { send to Tuesday midday naykris@gmail.com
 		turn off mail sending
 	+ 4 social buttons		
 	}	
+
+}
+
+Homework 6 {
+	email.psd -> make.html	
+}
+
+Homework 7 {
+	pseudoclasses + pseudoelements collaboration
+	pseudoelement:hover example
+
+	position homework: rectangles 
 }
