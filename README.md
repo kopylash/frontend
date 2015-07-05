@@ -32,7 +32,7 @@ Homework 5 { send to Tuesday midday naykris@gmail.com
 }
 
 Homework 6 {
-	email.psd -> make.html	
+	email.psd -> make html	
 }
 
 Homework 7 {
