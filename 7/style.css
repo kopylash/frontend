@@ -1,4 +1,4 @@
-html, body, .wrap {
+html, body {
 	height: 100%;
 }
 
@@ -7,9 +7,14 @@ body {
 }
 
 .wrap {
+	/*height: calc(100% - 30px);*/
 	background: #8dc63f;
 	margin:10px;
 	position: relative;
+	top:0;
+	right:0;
+	bottom: 0;
+	left: 0;
 	border: 5px solid red;
 }
 
