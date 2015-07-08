@@ -1,9 +1,111 @@
-.icon {
+body {
+	background: #f0f2f5;
+	margin:0;
+	font-family: Arial, Tahoma;
+}
+
+.header {
+	width:100%;
+	background: #ffffff;
+}
+
+.header-content {
+	width: 940px;
+	height: 65px;
+	margin:0 auto;
+	padding: 0 10px;
+}
+
+.sprite {
 	background: url("img/sprite.png");
 }
 
 .logo {
 	width: 32px;
 	height: 32px;
-	background-position: -48px 0; 
+}
+
+.name {
+	width:165px;
+	padding: 17px 0;
+}
+.first-name {
+	font-weight: bold;
+	font-style: italic;
+	color:#8cc152;
+}
+
+.second-name {
+	font-style: italic;
+	color:#bbc2ca;
+}
+
+.nav {
+ 	margin:0;
+	padding: 0;
+}
+
+.nav li {
+	display: block;
+	height: 65px;
+	float: left;
+	padding: 0 15px;
+	line-height: 65px;
+}
+
+.nav li a {
+	display: block;
+	text-decoration: none;
+	color:#434a54;
+}
+
+.search {
+	line-height: 65px;
+	height:65px;
+}
+
+.search-input {
+	width:190px;
+}
+.search-icon {
+	width: 24px;
+	height: 24px;
+	background-position: -48px -4px;
+}
+
+.content {
+	width:940px;
+	margin:0 auto;
+	padding: 0 10px;
+}
+
+.slider {
+	height:320px;
+	background: #ff6d55;
+	border-radius: 4px;
+	margin-top: 46px;
+}
+
+.tarif-block {
+	margin-top: 48px;
+}
+
+.plan {
+	width: 220px;
+	height: 350px;
+	background: #ffffff;
+	border-radius: 4px;
+	margin-right:20px; 
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float:right;
+}
+
+.no-margin {
+	margin:0;
 }

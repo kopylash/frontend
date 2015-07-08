@@ -7,7 +7,7 @@ body {
 }
 
 .wrap {
-	/*height: calc(100% - 30px);*/
+	height: calc(100% - 30px);
 	background: #8dc63f;
 	margin:10px;
 	position: relative;
