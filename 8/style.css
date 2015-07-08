@@ -23,6 +23,7 @@ body {
 .logo {
 	width: 32px;
 	height: 32px;
+	margin:16px 0;
 }
 
 .name {
@@ -71,19 +72,21 @@ body {
 	width: 24px;
 	height: 24px;
 	background-position: -48px -4px;
+	margin:19px 0;
 }
 
 .content {
-	width:940px;
+	width:960px;
 	margin:0 auto;
-	padding: 0 10px;
+	/*padding: 0 10px;*/
 }
 
 .slider {
+	width:940px;
 	height:320px;
 	background: #ff6d55;
 	border-radius: 4px;
-	margin-top: 46px;
+	margin: 46px auto 0 auto;
 }
 
 .tarif-block {
@@ -95,7 +98,12 @@ body {
 	height: 350px;
 	background: #ffffff;
 	border-radius: 4px;
-	margin-right:20px; 
+	margin:0 10px; 
+	border-top:5px solid #f0f2f5;
+}
+
+.plan:hover {
+	border-top:5px solid #a0d468;
 }
 
 .fl {

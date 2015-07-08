@@ -41,3 +41,11 @@ Homework 7 {
 
 	position homework: rectangles 
 }
+
+Homework 8 {
+	until Friday (10lesson) 00:00 make psd->html
+}
+
+Homework 9 {
+	find psd with contact form or login form
+}
