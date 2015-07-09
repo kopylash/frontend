@@ -7,11 +7,12 @@ body {
 .header {
 	width:100%;
 	background: #ffffff;
+	box-shadow: 0 2px 0 0 #e2e4e7; 
 }
 
 .header-content {
 	width: 940px;
-	height: 65px;
+	height: 63px;
 	margin:0 auto;
 	padding: 0 10px;
 }
@@ -23,12 +24,12 @@ body {
 .logo {
 	width: 32px;
 	height: 32px;
-	margin:16px 0;
+	margin:15px 0;
 }
 
 .name {
 	width:165px;
-	padding: 17px 0;
+	padding: 16px 0;
 }
 .first-name {
 	font-weight: bold;
@@ -48,10 +49,10 @@ body {
 
 .nav li {
 	display: block;
-	height: 65px;
+	height: 63px;
 	float: left;
 	padding: 0 15px;
-	line-height: 65px;
+	line-height: 63px;
 }
 
 .nav li a {
@@ -61,8 +62,8 @@ body {
 }
 
 .search {
-	line-height: 65px;
-	height:65px;
+	line-height: 63px;
+	height:63px;
 }
 
 .search-input {
@@ -72,21 +73,64 @@ body {
 	width: 24px;
 	height: 24px;
 	background-position: -48px -4px;
-	margin:19px 0;
+	margin:18px 0;
 }
 
 .content {
 	width:960px;
 	margin:0 auto;
-	/*padding: 0 10px;*/
 }
 
 .slider {
 	width:940px;
 	height:320px;
 	background: #ff6d55;
+	position: relative;
 	border-radius: 4px;
 	margin: 46px auto 0 auto;
+}
+
+.left-arrow, .right-arrow {
+	width:60px;
+	height: 100%;
+	position: absolute;
+}
+
+.right-arrow {
+	right: 0;
+}
+
+.left-arrow-icon {
+	width: 36px;
+	height: 70px;
+	background-position: 0 -48px;
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom:0;
+	left: 24px;
+	margin:auto 0;
+}
+
+.right-arrow-icon {
+	width: 36px;
+	height: 70px;
+	background-position: -52px -48px;
+	position: absolute;
+	top:0;
+	right: 24px;
+	bottom:0;
+	left: 0;
+	margin:auto 0;
+}
+
+.left-arrow a, .right-arrow a {
+	display: block;
+	height:100%;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+	opacity:0.7;
 }
 
 .tarif-block {
@@ -95,16 +139,162 @@ body {
 
 .plan {
 	width: 220px;
-	height: 350px;
+	height: 345px;
 	background: #ffffff;
 	border-radius: 4px;
 	margin:0 10px; 
-	border-top:5px solid #f0f2f5;
+	border-top:5px solid #ffffff;
+	box-shadow: 0 2px 0 0 #e2e4e7; 
 }
 
-.plan:hover {
+.plan p {
+	margin:0;
+	display: block;
+}
+
+.plan-header {
+	padding:25px 18px 10px;
+}
+
+.plan-name {
+	font-size: 24px;
+}
+
+.plan-info {
+	padding:10px 18px;
+	color:#656d78;
+	font-size: 13px;
+}
+
+.plan-description {
+	height: 51px;
+	padding:10px 18px 0;
+	color:#aab2bd;
+	font-size: 12px;
+}
+
+.plan-button {
+	display: block;
+	width:180px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	line-height: 40px;
+	background: #aab2bd;
+	color: #ffffff;
+	border:none;
+	border-radius:4px;
+}
+
+
+.starter-plan .plan-price {
+	color:red;
+}
+.basic-plan .plan-price {
+	color:#a0d468;
+}
+.pro-plan .plan-price {
+	color:#5ec5ea;
+}
+.ultra-plan .plan-price {
+	color:#bda9f0;
+}
+
+.starter-plan:hover {
+	border-top:5px solid red;
+}
+.starter-plan:hover .plan-button {
+	background: red;
+}
+.basic-plan:hover {
 	border-top:5px solid #a0d468;
 }
+.basic-plan:hover .plan-button {
+	background: #a0d468;
+}
+.pro-plan:hover {
+	border-top:5px solid #5ec5ea;
+}
+.pro-plan:hover .plan-button {
+	background: #5ec5ea;
+}
+.ultra-plan:hover {
+	border-top:5px solid #bda9f0;
+}
+.ultra-plan:hover .plan-button {
+	background: #bda9f0;
+}
+
+.news-block {
+	margin:33px 0;
+}
+
+.article {
+	width: 300px ;
+	height: 350px;
+	margin:0 10px;
+	background: #ffffff;
+	border-radius:4px;
+	box-shadow: 0 2px 0 0 #e2e4e7; 
+}
+
+.article-picture {
+	height: 106px;
+	background:#aab2bd;
+	border-top:0;
+	border-radius:4px 4px 0 0;
+	padding-top: 64px;
+}
+
+.picture-icon {
+	width: 33px;
+	height: 26px;
+	background-position: -103px -48px;
+	margin:0 auto 0;
+}
+.picture-text {
+	font-size: 11px;
+	color:#ffffff;
+	text-align: center;
+}
+
+.article-content {
+	margin-top:37px;
+	padding: 0 20px 0;
+}
+.article-header {
+	font-size: 18px;
+}
+.article-text {
+	font-size: 13px;
+	color:#aab2bd;
+}
+
+.stats {
+	margin:20px 0;
+}
+.stats-text {
+	font-size: 11px;
+	color:#cfd3d9;
+}
+.time {
+	margin-right:16px;
+}
+.clock-icon {
+	width:16px;
+	height: 16px;
+	background-position: -88px -8px;
+	margin:3px 4px 0 0;
+}
+
+.comment-icon {
+	width: 16px;
+	height: 14px;
+	background-position: -120px -9px;
+	margin:4px 5px 0 0;
+}
+
 
 .fl {
 	float: left;
@@ -114,6 +304,6 @@ body {
 	float:right;
 }
 
-.no-margin {
-	margin:0;
+.clear {
+	clear:both;
 }
