@@ -1,9 +1,9 @@
 @font-face {
-font-family: "OpenSans"; /* Имя шрифта */
+font-family: "Open Sans"; /* Имя шрифта */
 src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
-font-family: "MyriadPro"; /* Имя шрифта */
+font-family: "Myriad Pro"; /* Имя шрифта */
 src: url(../fonts/MYRIADPRO-REGULAR.OTF); /* Путь к файлу со шрифтом */
 }

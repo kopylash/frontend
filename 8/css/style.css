@@ -1,7 +1,7 @@
 body {
 	background: #f0f2f5;
 	margin:0;
-	font-family: OpenSans, Arial, Tahoma;
+	font-family: "Open Sans", Arial, Tahoma;
 }
 
 .header {
@@ -60,7 +60,7 @@ body {
 	display: block;
 	text-decoration: none;
 	color:#434a54;
-	font-family: MyriadPro;
+	font-family: "Myriad Pro",Arial;
 	text-transform: uppercase;
 }
 
