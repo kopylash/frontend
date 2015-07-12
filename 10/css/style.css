@@ -1,0 +1,110 @@
+body {
+	background: #fff;
+	font-family: "Lato", "Times New Roman"
+}
+
+.clear {
+	clear: both;
+}
+
+.wrap {
+	width:1180px;
+	margin: 0 auto;
+}
+
+.section1 {
+	width: 100%;
+	height: 880px;
+	background: url("../img/background1600x880.png");
+	background-size: 100% 100%;
+}
+
+.logo {
+	width:71px;
+	height:57px;
+	background: url("../img/sprite.png");
+	margin-top: 21px;
+	float:left;
+}
+.navbar {
+	float:right;
+}
+.navbar li {
+	 display:block;
+	 float: left;
+	 margin-right: 20px;
+
+}
+.navbar li a {
+	
+	 line-height: 108px;
+	 font-size: 14px;
+	 font-weight: bold;
+	 color: #fff;
+	 text-transform: uppercase;
+	 text-decoration: none;
+}
+
+.navbar:after {
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 10px;
+	background: url("../img/sprite.png");
+	background-position: -88px -28px;
+	margin-top:50px;
+}
+
+.navbar li a:hover {
+	opacity: 0.6;
+}
+
+.slogan-cursive {
+	width:317px;
+	margin:237px auto 0;
+	font-family: "Times New Roman";
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
+	color:#e9d9d9;
+}
+.slogan-big {
+	width: 430px;
+	margin:0 auto;
+	font-size: 100px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+.button {
+	display: block;
+	width:274px;
+	margin: 10px auto 0;
+	line-height: 62px;
+	border:3px solid #fff;
+	border-radius: 2px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#fff;
+	text-align: center;
+}
+.button:hover {
+	border-color: rgba(233, 217, 217, 0.6);
+}
+
+.slogan-small {
+	width:400px;
+	margin:38px auto 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.slogan-small a {
+	color: #fff;
+}
+
+
+
+
