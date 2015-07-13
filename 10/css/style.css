@@ -206,12 +206,14 @@ body {
 	text-transform: uppercase;
 }
 
-.redline {
+.intro-header:before {
+	content:'';
+	position:absolute;
 	width: 88px;
 	height: 1px;
 	background: url("../img/sprite.png");
 	background-position: -133px -33px;
-	margin-top: 7px;
+	margin-top:25px;
 }
 
 .intro-text {
