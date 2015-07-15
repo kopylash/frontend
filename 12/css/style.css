@@ -1,0 +1,20 @@
+
+
+.slider {
+	margin:0 10px 3px;
+	background: red;
+	padding-top:33%;
+	position: relative;
+	border-radius: 4px; 
+	overflow: hidden;
+}
+
+.slider img {
+	position: absolute;
+	top:0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
