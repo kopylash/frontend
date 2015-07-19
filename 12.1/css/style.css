@@ -1,0 +1,242 @@
+body {
+	min-width: 320px;
+	max-width: 480px;
+	background: #f0f2f5;
+	margin:0 auto;
+	font-family: Arial;
+}
+
+.wrap {
+	width: 304px;
+	margin: 0 auto;
+	position: relative;
+}
+body> .wrap {
+	margin-top: 15px;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	width:100%;
+	background: #fff;
+	padding:15px 0;
+	box-shadow: 0 2px 0 0 #e2e4e7;
+}
+
+.logo {
+	display: block;
+	width: 95px;
+	color: #a0d468;
+	text-decoration: none;
+	font-style: italic;
+	text-transform: uppercase;
+	padding-left: 35px;
+	float: left;
+}
+
+.logo:before {	
+	content: '';
+	background: url("../img/sprite.png");
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+}
+
+.btn {
+	width:32px;
+	height:32px;
+	border:1px solid #cccccc;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.menu, .search {
+	float:right;
+}
+.search {
+	margin-right:15px;
+}
+
+.menu:before {
+	content:'';
+	position:absolute;
+	background: url("../img/sprite.png");
+	background-position: -104px -89px;
+	width: 24px;
+	height: 13px;
+	margin:-6px 0 0 -12px;
+}
+.search:before {
+	content:'';
+	position:absolute;
+	background: url("../img/sprite.png");
+	background-position: -48px -4px;
+	width: 24px;
+	height: 24px;
+	margin:-12px;
+}
+
+.slider {
+	height: 128px;
+	background: #ff6d55;
+	border-radius: 4px;
+}
+
+.plan {
+	width: 145px;
+	margin:14px 0 0 14px;
+	padding:0;
+	background: #fff;
+	box-shadow: 0 2px 0 0 #e2e4e7;
+	border-radius: 4px;
+	float: left;
+}
+
+.starter,.basic {
+	margin-left:0;
+}
+
+.plan>div {
+	padding:0 16px;
+}
+
+.plan h1 {
+	padding-top:10px;
+	font-family: "Myriad Pro";
+	font-size: 24px;
+}
+
+.price {
+	margin-top:5px;
+}
+
+.description {
+	height:48px;
+	margin-top:14px;
+	color:#aab2bd;
+	font-size:12px;
+}
+
+.plan-btn {
+	display: block;
+	line-height: 40px;
+	background:#aab2bd; 
+	color:#fff;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius:0 0 4px 4px;
+	text-align: center;
+}
+
+
+.starter .price {
+	color: red;
+}
+.basic .price {
+	color:#a0d468;
+}
+.pro .price {
+	color:#5ec5ea;
+}
+.ultra .price {
+	color:#bda9f0;
+}
+.starter:hover .plan-btn {
+	background: red;
+}
+.pro:hover .plan-btn {
+	background: #5ec5ea;
+}
+.basic:hover .plan-btn {
+	background: #a0d468;
+}
+.ultra:hover .plan-btn {
+	background: #bda9f0;
+}
+
+.post {	
+	margin-top: 70px;
+	padding-top:13px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 #e2e4e7;
+	position: relative;
+}
+
+.rounded-image {
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+	overflow: hidden;
+	position:absolute;
+	top: -40px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.comments {
+	float:right;
+	margin-right:7px;
+	font-size: 11px;
+	font-family: "Open Sans";
+	color:#ced2d9;
+}
+.comments:before {
+	content:'';
+	position:absolute;
+	background: url("../img/sprite.png");
+	background-position: -120px -9px;
+	width: 16px;
+	height: 14px;
+	margin-left:-20px;
+}
+
+.clock {
+	float:right;
+	margin-right:33px;
+	font-size: 11px;
+	font-family: "Open Sans";
+	color:#ced2d9;
+}
+
+.clock:before {
+	content:'';
+	position:absolute;
+	background: url("../img/sprite.png");
+	background-position: -88px -8px;
+	width: 16px;
+	height: 16px;
+	margin: -2px 0 0 -20px;
+}
+
+.post h3 {
+	margin-top: 28px;
+	font-family: "Open Sans";
+	font-size: 18px;
+	text-align: center;
+}
+.post-text {
+	height: 82px;
+	margin-top:8px;
+	padding:0 16px;
+	overflow: hidden;
+	font-family: "Myriad Pro";
+	font-size:13px;
+	color:#aab2bd;
+}
+footer {
+	margin-top:35px;
+	background: #e6e9ed;
+}
+footer p {
+	color:#aab2bd;
+	font-size: 13px;
+	text-align: right;
+	line-height: 70px;
+}
