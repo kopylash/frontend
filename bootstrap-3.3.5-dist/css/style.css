@@ -1,0 +1,19 @@
+.container {
+	height:200px;
+	background: #a4dfee;
+}
+
+.block1 {
+	background: red;
+	height:50px;
+}
+
+.block2 {
+	background: #eeddaa;
+	height: 100px;
+}
+
+.plan {
+	background: green;
+	height:94px;
+}
