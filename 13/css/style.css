@@ -1,6 +1,6 @@
 body {
 	min-width: 320px;
-	max-width: 480px;
+	/*max-width: 800px;*/
 	background: #fff;
 	margin:0 auto;
 	font-family: "Segoe UI";
@@ -8,6 +8,10 @@ body {
 
 .clear {
 	clear:both;
+}
+
+.wrap {
+
 }
 
 img {
@@ -120,28 +124,28 @@ nav a {
 	background: url("../img/sprite.png") no-repeat -197px 0;
 	width: 179px;
 	height: 179px;
-	margin:30 auto;
+	margin:30px auto;
 }
 .camera {
 	display: block;
 	background: url("../img/sprite.png") no-repeat -392px 0;
 	width: 179px;
 	height: 179px;
-	margin:30 auto;
+	margin:30px auto;
 }
 .beer {
 	display: block;
 	background: url("../img/sprite.png") no-repeat -589px 0;
 	width: 179px;
 	height: 179px;
-	margin:30 auto;
+	margin:30px auto;
 }
 .devices {
 	display: block;
 	background: url("../img/sprite.png") no-repeat 0 0;
 	width: 179px;
 	height: 179px;
-	margin:30 auto;
+	margin:30px auto;
 }
 
 article {
@@ -213,4 +217,57 @@ background: url("../img/sprite.png") no-repeat -205px -196px;
 	color:#696b6a;
 	text-align: center;
 	padding-bottom: 15px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+	.banner {
+		height:500px;
+	}
+	.welcome-text {
+		padding-top:195px;
+	}
+
+	.tickets,.beer {
+		float:left;
+		margin-left:calc(50% - 199px);
+	}
+	.camera, .devices {
+		float:right;
+		margin-right: calc(50% - 199px);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	nav {
+		display: block;
+		float: right;
+	}
+	.menu {
+		display: none;
+	}
+	.banner {
+		height:590px;
+	}
+	.welcome-text {
+		padding-top:285px;
+	}
+	.beer,.camera, .devices {
+		float:left;
+		margin-left:25px;		
+	}
+	.tickets {
+		float:left;
+		margin-left: calc((100% - 791px) / 2);
+	}
+	.wrap {
+		width: 100%;
+		margin:0 auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.wrap {
+		width: 1024px;
+		margin:0 auto;
+	}
 }
