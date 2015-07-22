@@ -1,0 +1,8 @@
+@font-face {
+font-family: "Lavanderia Regular"; /* Имя шрифта */
+src: url(../fonts/Lavanderia Regular.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+font-family: "Alte Haas Grotesk"; /* Имя шрифта */
+src: url(../fonts/AlteHaasGroteskRegular.ttf); /* Путь к файлу со шрифтом */
+}
