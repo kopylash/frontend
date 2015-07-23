@@ -5,32 +5,51 @@
     <link href="css/reset.css" rel="stylesheet" media="all">
     <link href="css/font.css" rel="stylesheet" media="all">
     <link href="css/style.css" rel="stylesheet" media="all">
-
+    
     <title>Bootstrap 101 Template</title>
   </head>
-  <body>    
-    <section class="banner wrap">
-      <header>     
+  <body> 
+    <header>     
+      <div class="wrap">
         <a href="#" class="logo"><span class="logo-black">Graff </span><span class="logo-pink">pink</span></a>
-        <button class="menu"></button>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
+        <button class="menu" onclick="menuToggle()"></button>
+        <nav id="menu">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="dropdown"><a href="#">Services</a>
+              <ul class="submenu">
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Camera</a></li>
+                <li><a href="#">Beer</a></li>
+                <li><a href="#">Devices</a></li>
+              </ul>
+            </li>          
+            <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
         <div class="clear"></div>
-    </header>
+      </div>
+    </header>   
+    <section class="banner">
       <p class="welcome-text">welcome to pink</p>
       <p class="welcome-text-light">A multi purpose theme from cssauthor.com</p>
     </section>
     <section class="section2 wrap">
       <h2>Lorem Ipsum is simply dummy</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-      <i class="tickets"></i>
-      <i class="camera"></i>
-      <i class="beer"></i>
-      <i class="devices"></i>
+      <div class="tickets">
+        <p>Tickets</p>
+      </div>
+      <div class="camera">
+        <p>Camera</p>
+      </div>
+      <div class="beer">
+        <p>Beer</p>
+      </div>
+      <div class="devices">
+        <p>Devices</p>
+      </div>
       <div class="clear"></div>
     </section>
     <section class="news wrap">
@@ -40,6 +59,16 @@
         <p class="content">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
         </p>
+        <div class="clear"></div>
+      </article>
+      <article>
+        <h3>Lorem ipsum</h3>
+        <img src="img/articleImg.png" alt="" width="200" height="130">
+        <p class="content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+        <div class="clear"></div>
       </article>
       <article>
         <h3>Lorem ipsum</h3>
@@ -47,13 +76,7 @@
         <p class="content">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
         </p>
-      </article>
-      <article>
-        <h3>Lorem ipsum</h3>
-        <img src="img/articleImg.png" alt="" width="200" height="130">
-        <p class="content">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-        </p>
+        <div class="clear"></div>
       </article>
     </section>
     <footer>
@@ -68,5 +91,6 @@
       <p class="copyright">Copyright © 2009–2013 Cssauthor.com</p>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
