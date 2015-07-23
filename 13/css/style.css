@@ -57,25 +57,27 @@ nav a {
 	display: block;
 	font-size: 18px;
 }
-nav li {
-	float: left;
-}
 
-nav>ul li a {
-	padding:0 35px;
-}
+nav {
+	width:150px;
+	position:absolute;
+	top:90px;
+	right:0;
+	background: rgba(255,255,255,0.8);
+	line-height: 60px;
+	text-align: center;
+}	
 
 nav li:hover {
 	background: rgba(190,92,113,0.3)
 }
 
 .submenu {
-	width:134px;
+	width:130px;
 	position:absolute;
 	display: none;
 	background: rgba(255,255,255,0.8);
-	top:90px;
-	line-height: 60px;
+	margin: -60px 0 0 -130px;
 }
 
 .submenu li {
@@ -298,7 +300,8 @@ background: url("../img/sprite.png") no-repeat -69px -197px;
 	padding-bottom: 15px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media screen and (min-width: 480px) and (max-width: 799px) {
+	
 	.banner {
 		height:500px;
 	}
@@ -318,9 +321,38 @@ background: url("../img/sprite.png") no-repeat -69px -197px;
 
 @media screen and (min-width: 800px) {
 	nav {
+		width:auto;
+		position:static;
 		display: block;
 		float: right;
+		background: none;
+		line-height: 90px;
+	}	
+
+	nav li {
+		float: left;
 	}
+
+	nav>ul li a {
+		padding:0 35px;
+	}
+
+	nav li:hover {
+		background: rgba(190,92,113,0.3)
+	}
+
+	.submenu {
+		width:134px;	
+		margin: 0;
+		top:90px;
+		line-height: 60px;
+	}
+
+	.submenu li {
+		text-align: center;
+		float:none;
+	}
+
 	.menu {
 		display: none;
 	}
