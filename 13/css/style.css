@@ -151,12 +151,14 @@ nav li:hover {
 	font-weight: 200;
 }
 
-.tickets {
-	background: #4eb9f4;
+.tickets,.camera,.beer,.devices {
 	border-radius:50%;
 	width: 179px;
 	height: 179px;
 	margin:30px auto;
+}
+.tickets {
+	background: #4eb9f4;
 }
 .tickets:before {
 	content:'';
@@ -168,10 +170,6 @@ nav li:hover {
 }
 .camera {
 	background: #6fc125;
-	border-radius:50%;
-	width: 179px;
-	height: 179px;
-	margin:30px auto;
 }
 .camera:before {
 	content:'';
@@ -183,10 +181,6 @@ nav li:hover {
 }
 .beer {
 	background: #ff5649;
-	border-radius:50%;
-	width: 179px;
-	height: 179px;
-	margin:30px auto;
 }
 .beer:before {
 	content:'';
@@ -198,10 +192,6 @@ nav li:hover {
 }
 .devices {
 	background: #e48f23;
-	border-radius:50%;
-	width: 179px;
-	height: 179px;
-	margin:30px auto;
 }
 .devices:before {
 	content:'';
