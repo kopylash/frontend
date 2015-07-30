@@ -1,0 +1,242 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.sprite-sprite, .sprite-logo, .sprite-menu, .sprite-service1, .sprite-service2, .sprite-service3, .sprite-service4, .sprite-yellow-dots, .menu:before, .services h1:after, .service1 h2:before, .service2 h2:before, .service3 h2:before, .service4 h2:before {
+  background-image: url('../img/sprite-s55f695ee67.png');
+  background-repeat: no-repeat;
+}
+
+.sprite-logo {
+  background-position: 0 -33px;
+}
+
+.sprite-menu {
+  background-position: 0 0;
+}
+
+.sprite-service1 {
+  background-position: 0 -535px;
+}
+
+.sprite-service2 {
+  background-position: 0 -402px;
+}
+
+.sprite-service3 {
+  background-position: 0 -269px;
+}
+
+.sprite-service4 {
+  background-position: 0 -136px;
+}
+
+.sprite-yellow-dots {
+  background-position: 0 -102px;
+}
+
+body {
+  min-width: 320px;
+  max-width: 480px;
+  background: #fff;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+.yellow-text {
+  color: #ffe500;
+}
+
+header {
+  height: 80px;
+}
+
+.logo {
+  float: left;
+  display: block;
+  width: 51px;
+  height: 49px;
+  margin: 16px 0 0 20px;
+}
+
+.menu {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ffe500;
+  border-radius: 4px;
+  background: none;
+  float: right;
+  margin: 24px 20px 0 0;
+}
+
+.menu:before {
+  content: '';
+  position: absolute;
+  background-position: 0 0;
+  width: 24px;
+  height: 13px;
+  margin: -6px 0 0 -12px;
+}
+
+.slider {
+  height: 475px;
+  background: url("../img/background.png");
+  background-size: cover;
+  text-align: center;
+}
+.slider .greeting {
+  padding-top: 158px;
+  font-size: 16px;
+  font-family: "Open Sans Light";
+}
+.slider h1 {
+  margin-top: 10px;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Open Sans Semibold";
+}
+.slider p {
+  margin-top: 10px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.slider .button {
+  margin: 30px auto 0;
+  background: #fff;
+}
+
+.button {
+  display: block;
+  line-height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Open Sans Semibold";
+  font-size: 14px;
+}
+
+.services {
+  color: #334752;
+  text-align: center;
+}
+.services h1 {
+  margin-top: 60px;
+  font-family: "Open Sans Semibold";
+  font-size: 55px;
+  text-transform: uppercase;
+  color: #2c4755;
+}
+.services h1:after {
+  content: '';
+  display: block;
+  background-position: 0 -102px;
+  width: 86px;
+  height: 14px;
+  margin: 20px auto;
+}
+.services .service-panel {
+  margin: 0 auto;
+}
+
+.service {
+  font-family: "Open Sans Light";
+  font-size: 15px;
+  color: #637988;
+  padding: 0 50px;
+}
+.service h2 {
+  margin: 30px 0 20px;
+  font-family: "Open Sans Semibold";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #334752;
+}
+.service h2:before {
+  content: '';
+  display: block;
+  width: 127px;
+  height: 113px;
+  margin: 50px auto 30px;
+}
+.service h2:hover:before {
+  opacity: 0.7;
+}
+
+.service1 h2:before {
+  background-position: 0 -535px;
+}
+
+.service2 h2:before {
+  background-position: 0 -402px;
+}
+
+.service3 h2:before {
+  background-position: 0 -269px;
+}
+
+.service4 h2:before {
+  background-position: 0 -136px;
+}

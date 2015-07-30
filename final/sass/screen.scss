@@ -1,0 +1,164 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/reset";
+@import "compass/utilities/sprites";
+$sprite-spacing: 20px;
+$sprite-sort-by : 'size';
+@import "sprite/*.png";
+@include all-sprite-sprites;
+
+$yellow:#ffe500;
+$dark:#324651;
+$font-color:#334752;
+
+body {
+	min-width:320px;
+	max-width:480px;
+	background:#fff;
+	margin:0 auto;
+	font-family:"Open Sans";
+	color:#fff;
+}
+
+.clear {
+	clear:both;
+}
+.yellow-text {
+	color:$yellow;
+}
+
+header {
+	height:80px;
+	// background:#33ff93;
+}
+
+.logo {
+	float:left;
+	display:block;
+	width:51px;
+	height:49px;
+	margin:16px 0 0 20px;
+}
+
+.menu {
+	width:32px;
+	height:32px;
+	border:2px solid $yellow;
+	border-radius: 4px;
+	background: none;
+	float:right;
+	margin:24px 20px 0 0;
+}
+
+.menu:before {	
+	content:'';
+	position:absolute;
+	@include sprite-sprite(menu);
+	width: 24px;
+	height: 13px;
+	margin:-6px 0 0 -12px;
+
+}
+
+.slider {
+	height:475px;
+	background:url("../img/background.png");
+	background-size:cover;
+	text-align:center;
+	
+	.greeting {
+		padding-top:158px;
+		font-size:16px;
+		font-family:"Open Sans Light";
+	}
+	
+	h1 {
+		margin-top:10px;
+		font-size:70px;
+		text-transform: uppercase;
+		font-family:"Open Sans Semibold";
+	}
+
+	p {
+		margin-top:10px; 
+		padding:0 15px;
+		font-size:14px;
+	}
+
+	.button {		
+		margin:30px auto 0;
+		background:#fff;
+	}
+}
+
+.button {
+	display:block;
+	line-height: 40px;
+	width:150px;
+	border-radius:20px;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:center;
+	font-family:"Open Sans Semibold";
+	font-size: 14px;
+	
+}
+
+.services {
+	color:$font-color;
+	text-align:center;
+
+	h1 {
+		margin-top: 60px;
+		font-family:"Open Sans Semibold";
+		font-size: 55px;
+		text-transform: uppercase;
+		color:#2c4755;
+	}
+	h1:after {
+		content:'';
+		display: block;
+		@include sprite-sprite(yellow-dots);
+		width: 86px;
+		height: 14px;
+		margin:20px auto;
+	}
+
+	.service-panel {
+		margin:0 auto;
+	}
+}
+
+.service {
+	font-family:"Open Sans Light";
+	font-size:15px;
+	color:#637988;
+	padding: 0 50px;
+
+	h2 {
+		margin:30px 0 20px;
+		font-family:"Open Sans Semibold";
+		font-size: 18px;
+		text-transform: uppercase;
+		color:$font-color;
+	}
+
+	h2:before {
+		content:'';
+		display: block;
+		width: 127px;
+		height: 113px;
+		margin:50px auto 30px;
+	}
+	h2:hover:before {
+		opacity: 0.7;
+	}
+}
+
+@for $i from 1 through 4 {
+	.service#{$i} h2:before {
+	@include sprite-sprite(service#{$i});
+	}
+}
