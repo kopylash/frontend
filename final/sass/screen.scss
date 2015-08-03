@@ -288,14 +288,18 @@ header {
 		border: 0;
 		height: 16px;
 		width:90%;
-		border-radius: 8px
+		border-radius: 8px;
+		-webkit-appearance:none;
+
 	}
 	progress::-webkit-progress-bar {
-	  /* стилевые правила */
+	  background-color: #fff;
+	  border-radius: 8px;
 	}
 	
 	progress::-webkit-progress-value {
-	  /* стилевые правила */
+	 background:$yellow;
+	 border-radius: 8px;
 	}
 	progress::-moz-progress-bar {
 	  border-radius: 8px 0 0 8px;
@@ -311,4 +315,91 @@ header {
 	h2 {
 		margin:0;
 	}
+}
+
+.blog {
+	color:$font-color;
+	text-align:center;
+	background:#fafafa;
+	padding:1px 0;
+	@include heading;
+
+	.post-wrap {
+		width:100%;
+		margin:0 auto;
+	}
+
+	.post {
+		width:85%;
+		margin: 40px auto;
+		text-align: left;
+		background:#fff;
+		box-shadow:0 1px 0 0 #c2cfd7;
+
+		h2 {
+			color:$yellow;
+			font-family:"Open Sans Semibold";
+			font-size:20px;
+			margin:20px 15px 0;
+		}
+
+		img {
+			width:100%;
+			height:200px;
+			background:$dark;
+
+		}
+
+		.date {
+			font-family:"Open Sans Light";
+			font-size: 13px;
+			margin: 10px 15px 15px;
+			padding:0;
+		}
+
+		p {
+			padding: 0 15px;
+		}
+
+		a {
+			margin:15px;
+			float:right;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family:"Open Sans Semibold";
+			color:$yellow;
+		}
+	}
+}
+
+footer {
+	background:#182227;
+	text-align:center;
+	font-family:"Open Sans Light";
+	font-size: 18px;
+	padding:25px 0;
+
+	.phone {
+		margin-top:15px;
+	}
+
+	.socials {
+		margin:25px auto;
+		width:212px;
+ 		a {
+ 			background:#fff;
+ 		}
+
+ 		a:hover {
+ 			background:$yellow;
+ 		}
+	}
+
+	.copyright {
+		font-size:12px;
+	}
+}
+
+.col-2 {
+
 }
