@@ -58,7 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.sprite-sprite, .sprite-logo, .sprite-menu, .sprite-service1, .sprite-service2, .sprite-service3, .sprite-service4, .sprite-yellow-dots, .menu:before, .services h1:after, .service1 h2:before, .service2 h2:before, .service3 h2:before, .service4 h2:before, .about h1:after, .blog h1:after {
+.sprite-sprite, .sprite-logo, .sprite-menu, .sprite-service1, .sprite-service2, .sprite-service3, .sprite-service4, .sprite-yellow-dots, .menu:before, .services h1:after, .service1 h2:before, .service2 h2:before, .service3 h2:before, .service4 h2:before, .about h1:after, .blog h1:after, .portfolio h1:after, .clients h1:after {
   background-image: url('../img/sprite-s55f695ee67.png');
   background-repeat: no-repeat;
 }
@@ -93,11 +93,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 body {
   min-width: 320px;
-  max-width: 480px;
   background: #fff;
   margin: 0 auto;
   font-family: "Open Sans";
   color: #fff;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .clear {
@@ -109,8 +112,14 @@ body {
 }
 
 header {
+  line-height: 80px;
   height: 80px;
   box-shadow: 0 2px 0 0 #324651;
+  position: relative;
+}
+
+nav {
+  display: none;
 }
 
 .logo {
@@ -204,6 +213,7 @@ header {
 }
 .services .service-panel {
   margin: 0 auto;
+  position: relative;
 }
 
 .service {
@@ -225,9 +235,6 @@ header {
   width: 127px;
   height: 113px;
   margin: 50px auto 30px;
-}
-.service h2:hover:before {
-  opacity: 0.7;
 }
 
 .service1 h2:before {
@@ -345,7 +352,6 @@ header {
   padding: 20px;
 }
 .skills h2 {
-  font-size: 20px;
   text-transform: uppercase;
   margin: 0;
 }
@@ -383,6 +389,7 @@ header {
 }
 .company h2 {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .blog {
@@ -424,7 +431,7 @@ header {
 }
 .blog .post img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background: #324651;
 }
 .blog .post .date {
@@ -467,4 +474,246 @@ footer .socials a:hover {
 }
 footer .copyright {
   font-size: 12px;
+}
+
+.portfolio {
+  color: #000;
+  text-align: center;
+}
+.portfolio h1 {
+  font-family: "Open Sans Semibold";
+  font-size: 55px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.portfolio h1:after {
+  content: '';
+  display: block;
+  background-position: 0 -102px;
+  width: 86px;
+  height: 14px;
+  margin: 20px auto;
+}
+.portfolio .tab {
+  display: block;
+  padding: 0 15px;
+  border-radius: 25px;
+  margin: 10px 5px;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.portfolio input[name="test"],
+.portfolio .all, .portfolio .webdesign, .portfolio .graphic, .portfolio .photo {
+  display: none;
+}
+.portfolio #radio1:checked ~ .all,
+.portfolio #radio2:checked ~ .webdesign,
+.portfolio #radio3:checked ~ .graphic,
+.portfolio #radio4:checked ~ .photo {
+  display: block;
+}
+.portfolio #radio1:checked ~ label[for=radio1] {
+  background: #ffe500;
+}
+.portfolio #radio2:checked ~ label[for=radio2] {
+  background: #ffe500;
+}
+.portfolio #radio3:checked ~ label[for=radio3] {
+  background: #ffe500;
+}
+.portfolio #radio4:checked ~ label[for=radio4] {
+  background: #ffe500;
+}
+.portfolio img {
+  background: #324651;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.clients {
+  color: #334752;
+  text-align: center;
+}
+.clients h1 {
+  font-family: "Open Sans Semibold";
+  font-size: 55px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.clients h1:after {
+  content: '';
+  display: block;
+  background-position: 0 -102px;
+  width: 86px;
+  height: 14px;
+  margin: 20px auto;
+}
+.clients img {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 850px) and (max-width: 1169px) {
+  .service-panel {
+    width: 580px;
+    padding-bottom: 50px;
+  }
+
+  .service {
+    width: 260px;
+    padding: 0;
+    margin: 0 15px;
+    float: left;
+  }
+
+  .wrap {
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  .blog .post-wrap {
+    width: 850px;
+    margin: 10px -15px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .video-block iframe {
+    width: 400px;
+    height: 340px;
+    float: left;
+    margin: -50px 20px 0;
+  }
+  .video-block h1 {
+    font-size: 30px;
+    margin-left: 400px;
+  }
+  .video-block .button {
+    display: inline-block;
+  }
+
+  .about img {
+    float: left;
+    margin-right: 15px;
+  }
+  .about h2 {
+    margin-top: 30px;
+  }
+  .about p {
+    margin: 25px 0;
+  }
+  .about .socials {
+    width: auto;
+    line-height: 35px;
+    margin-top: 40px;
+  }
+
+  .skills {
+    margin-top: 0;
+    width: 400px;
+    float: left;
+  }
+  .skills h2 {
+    margin-top: 0;
+  }
+
+  .company h2 {
+    margin-top: 0;
+  }
+
+  .skills, .company {
+    padding: 20px 0;
+  }
+
+  .blog .post {
+    width: 370px;
+    float: left;
+    margin: 15px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+  nav ul:first-child {
+    float: left;
+  }
+  nav ul:nth-child(2) {
+    float: right;
+  }
+  nav li {
+    float: left;
+  }
+  nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #334752;
+    padding: 0 20px;
+  }
+  nav a:hover {
+    background: #fff599;
+  }
+
+  .logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .wrap {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  nav ul:first-child {
+    margin-left: 150px;
+  }
+  nav ul:nth-child(2) {
+    margin-right: 150px;
+  }
+
+  .service-panel:before {
+    content: '';
+    background: url("../img/service-line.png");
+    width: 841px;
+    height: 2px;
+    position: absolute;
+    left: 165px;
+    top: 106px;
+    z-index: -1;
+  }
+
+  .service-panel {
+    width: 1160px;
+    padding-bottom: 50px;
+  }
+
+  .service {
+    width: 260px;
+    padding: 0;
+    margin: 0 15px;
+    float: left;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .blog .post-wrap {
+    width: 1200px;
+    margin: 10px -15px;
+  }
+  .blog .post:first-child, .blog .post:nth-child(2) {
+    width: 570px;
+  }
 }
