@@ -285,13 +285,16 @@ nav {
 	color:$font-color;
 	
 	a {
-		display:block;
+		display:block;		
 		height:35px;
 		width:35px;
-		border-radius:50%;
-		background:$yellow;
 		margin:0 9px;
 		float:left;
+		border-radius:50%;
+		background:$yellow;		
+		line-height:35px;
+		text-decoration: none;
+		color:#000;
 	}
 
 	a:hover {
@@ -326,7 +329,6 @@ nav {
 		width:90%;
 		border-radius: 8px;
 		-webkit-appearance:none;
-
 	}
 	progress::-webkit-progress-bar {
 	  background-color: #fff;
@@ -432,6 +434,7 @@ footer {
 
  		a:hover {
  			background:$yellow;
+ 			color:#000;
  		}
 	}
 
@@ -450,7 +453,7 @@ footer {
 	@include heading;
 
 	.tabs {
-		width:470px;
+		width:300px;
 		margin:0 auto;
 	}
 
@@ -484,6 +487,7 @@ footer {
 	}
 
 	img {
+		max-width:300px;
 		margin:20px auto;
 		border-radius:5px;
 	}
@@ -502,7 +506,7 @@ footer {
 		opacity:0.7;
 	}
 	img {		
-		max-width:370px;
+		max-width:300px;
 		margin:0 auto;
 		border-radius:5px;
 	}
@@ -516,8 +520,14 @@ footer {
 
 	@include heading;
 
-	.feedback {
+	button {
+		border:none;
+		margin: 0 auto;
+		cursor:pointer;
+	}
 
+	button:hover {
+		background:$yellow;
 	}
 	
 	input,textarea {
@@ -533,6 +543,8 @@ footer {
 		font-family: "Open Sans Light";
 		font-size:17px;
 	}
+
+
 
 	input {
 		line-height: 50px;
@@ -550,6 +562,16 @@ footer {
 		padding:0 15px;
 	}
 
+}
+
+html[data-useragent*='MSIE 10.0'] input {
+		height:50px;
+	}
+
+html[data-useragent*='MSIE 10.0'] .skills progress {
+		appearance:none;
+		border:none;
+		color:$yellow;
 }
 
 @media screen and (min-width:850px) and (max-width:1169px) {
@@ -574,6 +596,11 @@ footer {
 }
 
 @media screen and (min-width:800px) {
+	nav {
+		width:auto;
+		position:static;
+		line-height: 80px;		
+	}
 	.video-block {
 		iframe {
 			width:400px;
@@ -671,6 +698,24 @@ footer {
 		right: 0px;
 		bottom: 0px;
 	}
+
+	.portfolio,.clients {
+		img {
+			max-width: 370px;
+		}
+	}
+
+	.portfolio {
+		.tabs {
+			width:470px;
+		}
+	}
+
+	html[data-useragent*='MSIE 10.0'] .portfolio {
+	.tabs {
+		width:480px !important;
+	}
+}
 
 	.contact {
 		.feedback {

@@ -359,10 +359,13 @@ nav a:hover {
   display: block;
   height: 35px;
   width: 35px;
-  border-radius: 50%;
-  background: #ffe500;
   margin: 0 9px;
   float: left;
+  border-radius: 50%;
+  background: #ffe500;
+  line-height: 35px;
+  text-decoration: none;
+  color: #000;
 }
 .socials a:hover {
   background: #324651;
@@ -498,6 +501,7 @@ footer .socials a {
 }
 footer .socials a:hover {
   background: #ffe500;
+  color: #000;
 }
 footer .copyright {
   font-size: 12px;
@@ -522,7 +526,7 @@ footer .copyright {
   margin: 20px auto;
 }
 .portfolio .tabs {
-  width: 470px;
+  width: 300px;
   margin: 0 auto;
 }
 .portfolio .tab {
@@ -558,6 +562,7 @@ footer .copyright {
   background: #ffe500;
 }
 .portfolio img {
+  max-width: 300px;
   margin: 20px auto;
   border-radius: 5px;
 }
@@ -588,7 +593,7 @@ footer .copyright {
   opacity: 0.7;
 }
 .clients img {
-  max-width: 370px;
+  max-width: 300px;
   margin: 0 auto;
   border-radius: 5px;
 }
@@ -612,6 +617,14 @@ footer .copyright {
   width: 86px;
   height: 14px;
   margin: 20px auto;
+}
+.contact button {
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #ffe500;
 }
 .contact input, .contact textarea {
   display: block;
@@ -639,6 +652,16 @@ footer .copyright {
   padding: 0 15px;
 }
 
+html[data-useragent*='MSIE 10.0'] input {
+  height: 50px;
+}
+
+html[data-useragent*='MSIE 10.0'] .skills progress {
+  appearance: none;
+  border: none;
+  color: #ffe500;
+}
+
 @media screen and (min-width: 850px) and (max-width: 1169px) {
   .service-panel {
     width: 580px;
@@ -663,6 +686,12 @@ footer .copyright {
   }
 }
 @media screen and (min-width: 800px) {
+  nav {
+    width: auto;
+    position: static;
+    line-height: 80px;
+  }
+
   .video-block iframe {
     width: 400px;
     height: 340px;
@@ -750,6 +779,18 @@ footer .copyright {
     margin: auto;
     right: 0px;
     bottom: 0px;
+  }
+
+  .portfolio img, .clients img {
+    max-width: 370px;
+  }
+
+  .portfolio .tabs {
+    width: 470px;
+  }
+
+  html[data-useragent*='MSIE 10.0'] .portfolio .tabs {
+    width: 480px !important;
   }
 
   .contact .feedback {
